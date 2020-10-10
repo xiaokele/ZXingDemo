@@ -1,3 +1,1 @@
 # ZXingDemo
-# ZXingDemo
-# ZXingDemo
