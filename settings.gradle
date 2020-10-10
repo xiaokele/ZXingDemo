@@ -1,0 +1,4 @@
+include ':zxinglib'
+include ':app'
+rootProject.name = "ZXingDemo"
+include ':android'

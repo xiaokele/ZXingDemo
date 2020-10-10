@@ -1,0 +1,353 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3 Copyright (C) 2008 ZXing authors
+4
+5 Licensed under the Apache License, Version 2.0 (the "License");
+6 you may not use this file except in compliance with the License.
+7 You may obtain a copy of the License at
+8
+9      http://www.apache.org/licenses/LICENSE-2.0
+10
+11 Unless required by applicable law or agreed to in writing, software
+12 distributed under the License is distributed on an "AS IS" BASIS,
+13 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14 See the License for the specific language governing permissions and
+15 limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.google.zxing.client.android"
+19    android:installLocation="auto"
+20    android:versionCode="1"
+21    android:versionName="1.0" >
+22
+23    <uses-sdk
+24        android:minSdkVersion="19"
+24-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml
+25        android:targetSdkVersion="22" />
+25-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml
+26
+27    <uses-permission android:name="android.permission.CAMERA" />
+27-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:22:5-65
+27-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:22:22-62
+28    <uses-permission android:name="android.permission.INTERNET" />
+28-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:23:5-67
+28-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:23:22-64
+29    <uses-permission android:name="android.permission.VIBRATE" />
+29-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:24:5-66
+29-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:24:22-63
+30    <uses-permission android:name="android.permission.FLASHLIGHT" />
+30-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:25:5-69
+30-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:25:22-66
+31    <uses-permission android:name="android.permission.READ_CONTACTS" />
+31-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:26:5-72
+31-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:26:22-69
+32    <!-- unavailable in API 23 -->
+33    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+33-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:28:5-93
+33-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:28:22-90
+34    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+34-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:29:5-81
+34-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:29:22-78
+35    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+35-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:30:5-76
+35-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:30:22-73
+36    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+36-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:31:5-76
+36-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:31:22-73
+37
+38    <!-- <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="22"/> -->
+39
+40    <uses-feature android:name="android.hardware.camera.any" />
+40-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:35:5-64
+40-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:35:19-61
+41    <uses-feature
+41-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:36:5-38:36
+42        android:name="android.hardware.camera.autofocus"
+42-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:37:9-57
+43        android:required="false" />
+43-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:38:9-33
+44    <uses-feature
+44-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:39:5-41:36
+45        android:name="android.hardware.camera.flash"
+45-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:40:9-53
+46        android:required="false" />
+46-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:41:9-33
+47    <uses-feature android:name="android.hardware.screen.landscape" />
+47-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:42:5-70
+47-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:42:19-67
+48    <uses-feature
+48-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:43:5-45:36
+49        android:name="android.hardware.wifi"
+49-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:44:9-45
+50        android:required="false" />
+50-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:45:9-33
+51
+52    <application
+52-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:47:5-176:19
+53        android:allowBackup="true"
+53-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:48:9-35
+54        android:icon="@drawable/launcher_icon"
+54-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:49:9-47
+55        android:label="@string/app_name"
+55-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:50:9-41
+56        android:logo="@drawable/launcher_icon" >
+56-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:51:9-47
+57        <activity
+57-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:52:9-115:20
+58            android:name="com.google.zxing.client.android.CaptureActivity"
+58-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:53:13-44
+59            android:clearTaskOnLaunch="true"
+59-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:54:13-45
+60            android:screenOrientation="sensorLandscape"
+60-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:55:13-56
+61            android:stateNotNeeded="true"
+61-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:56:13-42
+62            android:theme="@style/CaptureTheme"
+62-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:57:13-48
+63            android:windowSoftInputMode="stateAlwaysHidden" >
+63-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:58:13-60
+64            <intent-filter>
+64-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:59:13-62:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:60:17-69
+65-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:60:25-66
+66
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:61:17-77
+67-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:61:27-74
+68            </intent-filter>
+69            <intent-filter>
+69-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:63:13-66:29
+70                <action android:name="com.google.zxing.client.android.SCAN" />
+70-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:64:17-79
+70-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:64:25-76
+71
+72                <category android:name="android.intent.category.DEFAULT" />
+72-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:17-76
+72-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:27-73
+73            </intent-filter>
+74            <!-- Allow web apps to launch Barcode Scanner by linking to http://zxing.appspot.com/scan. -->
+75            <intent-filter>
+75-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:68:13-78:29
+76                <action android:name="android.intent.action.VIEW" />
+76-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:69:17-69
+76-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:69:25-66
+77
+78                <category android:name="android.intent.category.DEFAULT" />
+78-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:17-76
+78-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:27-73
+79                <category android:name="android.intent.category.BROWSABLE" />
+79-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:72:17-78
+79-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:72:27-75
+80
+81                <data
+81-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:74:17-77:45
+82                    android:host="zxing.appspot.com"
+82-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:75:21-53
+83                    android:path="/scan"
+83-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:76:21-41
+84                    android:scheme="http" />
+84-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:77:21-42
+85            </intent-filter>
+86            <!-- We also support a Google Product Search URL. -->
+87            <intent-filter>
+87-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:80:13-90:29
+88                <action android:name="android.intent.action.VIEW" />
+88-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:69:17-69
+88-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:69:25-66
+89
+90                <category android:name="android.intent.category.DEFAULT" />
+90-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:17-76
+90-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:27-73
+91                <category android:name="android.intent.category.BROWSABLE" />
+91-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:72:17-78
+91-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:72:27-75
+92
+93                <data
+93-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:74:17-77:45
+94                    android:host="www.google.com"
+94-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:75:21-53
+95                    android:path="/m/products/scan"
+95-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:76:21-41
+96                    android:scheme="http" />
+96-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:77:21-42
+97            </intent-filter>
+98            <!-- And the UK version. -->
+99            <intent-filter>
+99-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:92:13-102:29
+100                <action android:name="android.intent.action.VIEW" />
+100-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:69:17-69
+100-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:69:25-66
+101
+102                <category android:name="android.intent.category.DEFAULT" />
+102-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:17-76
+102-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:27-73
+103                <category android:name="android.intent.category.BROWSABLE" />
+103-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:72:17-78
+103-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:72:27-75
+104
+105                <data
+105-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:74:17-77:45
+106                    android:host="www.google.co.uk"
+106-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:75:21-53
+107                    android:path="/m/products/scan"
+107-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:76:21-41
+108                    android:scheme="http" />
+108-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:77:21-42
+109            </intent-filter>
+110            <!-- Support zxing://scan/?... like iPhone app -->
+111            <intent-filter>
+111-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:104:13-114:29
+112                <action android:name="android.intent.action.VIEW" />
+112-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:69:17-69
+112-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:69:25-66
+113
+114                <category android:name="android.intent.category.DEFAULT" />
+114-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:17-76
+114-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:27-73
+115                <category android:name="android.intent.category.BROWSABLE" />
+115-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:72:17-78
+115-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:72:27-75
+116
+117                <data
+117-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:74:17-77:45
+118                    android:host="scan"
+118-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:75:21-53
+119                    android:path="/"
+119-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:76:21-41
+120                    android:scheme="zxing" />
+120-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:77:21-42
+121            </intent-filter>
+122        </activity>
+123        <activity
+123-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:116:9-119:45
+124            android:name="com.google.zxing.client.android.PreferencesActivity"
+124-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:117:13-48
+125            android:label="@string/preferences_name"
+125-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:118:13-53
+126            android:stateNotNeeded="true" />
+126-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:119:13-42
+127        <activity
+127-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:120:9-139:20
+128            android:name="com.google.zxing.client.android.encode.EncodeActivity"
+128-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:121:13-50
+129            android:stateNotNeeded="true" >
+129-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:122:13-42
+130            <intent-filter>
+130-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:123:13-126:29
+131                <action android:name="com.google.zxing.client.android.ENCODE" />
+131-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:124:17-81
+131-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:124:25-78
+132
+133                <category android:name="android.intent.category.DEFAULT" />
+133-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:17-76
+133-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:27-73
+134            </intent-filter>
+135            <!-- This allows us to handle the Share button in Contacts. -->
+136            <intent-filter>
+136-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:128:13-132:29
+137                <action android:name="android.intent.action.SEND" />
+137-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:129:17-69
+137-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:129:25-66
+138
+139                <category android:name="android.intent.category.DEFAULT" />
+139-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:17-76
+139-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:27-73
+140
+141                <data android:mimeType="text/x-vcard" />
+141-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:74:17-77:45
+141-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:131:23-54
+142            </intent-filter>
+143            <!-- This allows us to handle sharing any plain text . -->
+144            <intent-filter>
+144-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:134:13-138:29
+145                <action android:name="android.intent.action.SEND" />
+145-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:129:17-69
+145-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:129:25-66
+146
+147                <category android:name="android.intent.category.DEFAULT" />
+147-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:17-76
+147-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:27-73
+148
+149                <data android:mimeType="text/plain" />
+149-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:74:17-77:45
+149-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:131:23-54
+150            </intent-filter>
+151        </activity>
+152        <activity
+152-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:140:9-149:20
+153            android:name="com.google.zxing.client.android.book.SearchBookContentsActivity"
+153-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:141:13-60
+154            android:label="@string/sbc_name"
+154-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:142:13-45
+155            android:screenOrientation="sensorLandscape"
+155-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:143:13-56
+156            android:stateNotNeeded="true" >
+156-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:144:13-42
+157            <intent-filter>
+157-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:145:13-148:29
+158                <action android:name="com.google.zxing.client.android.SEARCH_BOOK_CONTENTS" />
+158-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:146:17-95
+158-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:146:25-92
+159
+160                <category android:name="android.intent.category.DEFAULT" />
+160-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:17-76
+160-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:27-73
+161            </intent-filter>
+162        </activity>
+163        <activity
+163-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:150:9-158:20
+164            android:name="com.google.zxing.client.android.share.ShareActivity"
+164-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:151:13-48
+165            android:screenOrientation="user"
+165-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:152:13-45
+166            android:stateNotNeeded="true" >
+166-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:153:13-42
+167            <intent-filter>
+167-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:154:13-157:29
+168                <action android:name="com.google.zxing.client.android.SHARE" />
+168-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:155:17-80
+168-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:155:25-77
+169
+170                <category android:name="android.intent.category.DEFAULT" />
+170-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:17-76
+170-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:65:27-73
+171            </intent-filter>
+172        </activity>
+173        <activity
+173-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:159:9-162:45
+174            android:name="com.google.zxing.client.android.history.HistoryActivity"
+174-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:160:13-52
+175            android:label="@string/history_title"
+175-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:161:13-50
+176            android:stateNotNeeded="true" />
+176-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:162:13-42
+177        <activity
+177-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:163:9-166:45
+178            android:name="com.google.zxing.client.android.share.BookmarkPickerActivity"
+178-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:164:13-57
+179            android:label="@string/bookmark_picker_name"
+179-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:165:13-57
+180            android:stateNotNeeded="true" />
+180-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:166:13-42
+181        <activity
+181-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:167:9-170:45
+182            android:name="com.google.zxing.client.android.share.AppPickerActivity"
+182-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:168:13-52
+183            android:label="@string/app_picker_name"
+183-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:169:13-52
+184            android:stateNotNeeded="true" />
+184-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:170:13-42
+185        <activity
+185-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:171:9-175:45
+186            android:name="com.google.zxing.client.android.HelpActivity"
+186-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:172:13-41
+187            android:label="@string/menu_help"
+187-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:173:13-46
+188            android:screenOrientation="user"
+188-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:174:13-45
+189            android:stateNotNeeded="true" />
+189-->D:\kele\dev\projects\jisuyuqing\ZXingDemo\android\src\main\AndroidManifest.xml:175:13-42
+190    </application>
+191
+192</manifest>
