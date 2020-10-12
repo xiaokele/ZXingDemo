@@ -5,7 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.skateboard.zxinglib.CaptureActivity;
+import com.kele.zxingdemo.bgaqrcode_zbar.ZBarQRCodeActivity;
+import com.kele.zxingdemo.bgaqrcode_zxing.ZXingQRCodeActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -39,11 +40,23 @@ public class MainActivity extends AppCompatActivity {
 //                }
 //            }
 //        });
-        findViewById(R.id.tv_capture_btn_3).setOnClickListener(new View.OnClickListener() {
+//        findViewById(R.id.tv_capture_btn_3).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, CaptureActivity.class);
+//                startActivityForResult(intent, 1001);
+//            }
+//        });
+        findViewById(R.id.tv_capture_btn_4).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, CaptureActivity.class);
-                startActivityForResult(intent, 1001);
+                ZXingQRCodeActivity.launch(MainActivity.this);
+            }
+        });
+        findViewById(R.id.tv_capture_btn_5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ZBarQRCodeActivity.launch(MainActivity.this);
             }
         });
     }
@@ -96,21 +109,21 @@ public class MainActivity extends AppCompatActivity {
 //                        break;
 //                }
 //                break;
-            case 1001:
-                switch (resultCode) {
-                    case RESULT_OK:
+//            case 1001:
+//                switch (resultCode) {
+//                    case RESULT_OK:
 //                        tvResult.setText(data.getStringExtra(Intents.Scan.RESULT));  //or do sth 1
-                        tvResult.setText(data.getStringExtra(CaptureActivity.KEY_DATA));  //or do sth 3
-                        break;
-                    case RESULT_CANCELED:
-                        if (data != null) {
-                            // for some reason camera is not working correctly
+////                        tvResult.setText(data.getStringExtra(CaptureActivity.KEY_DATA));  //or do sth 3
+//                        break;
+//                    case RESULT_CANCELED:
+//                        if (data != null) {
+//                            // for some reason camera is not working correctly
 //                            tvResult.setText(data.getStringExtra(Intents.Scan.RESULT)); //1
-                            tvResult.setText(data.getStringExtra(CaptureActivity.KEY_DATA));//3
-                        }
-                        break;
-                }
-                break;
+////                            tvResult.setText(data.getStringExtra(CaptureActivity.KEY_DATA));//3
+//                        }
+//                        break;
+//                }
+//                break;
         }
     }
 }
